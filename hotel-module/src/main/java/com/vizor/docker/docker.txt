@@ -1,0 +1,250 @@
+    1  dir
+    2  cd workspace/
+    3  dir
+    4  cd hotel
+    5  dir
+    6  ls -la
+    7  eval $(minikube docker-env)
+    8  docker images
+    9  sudo docker images --list
+   10  sudo docker images list
+   11  sudo docker images -list
+   12  sudo docker images list
+   13  sudo docker images -list
+   14  sudo docker images --list
+   15  sudo docker images --help
+   16  sudo docker images --all
+   17  sudo docker images --help
+   18  sudo docker images 
+   19  kubectl run --image=hotel_scv 
+   20  kubectl run -help
+   21  kubectl run -h
+   22  kubectl run hotel --image=hotel_scv 
+   23  sudo docker images 
+   24  kubectl run hotel --image=hotel_scv:v1 
+   25  kubectl get pods
+   26  minikube start
+   27  kubectl get pods
+   28  kubectl run hotel --image=hotel_scv:v1 
+   29  ls -la
+   30  kubectl get deployments
+   31  kubectl get pods
+   32  kubectl get deployments
+   33  kube exec hotel -it sh
+   34  kubectl exec hotel -it sh
+   35  kubectl get pods
+   36  kubectl exec hotel-588cd5875-znbnb -it sh
+   37  kubectl get pods
+   38  kubectl exec hotel-5885cd5875-znbnb -it sh
+   39  kubectl get deployments
+   40  kubectl exec hotel-5885cd5875-znbnb -it sh
+   41  kubectl logs
+   42  kubectl logs -h
+   43  kubectl get pods
+   44  kubectl logs hotel-5885cd5875-znbnb
+   45  kubectl get deployments
+   46  kubectl describe pod hotel-5885cd5875-znbnb
+   47  kubectl get deployments
+   48  eval $(minikube docker-env)
+   49  di
+   50  dir
+   51  sudo docker build ./ -t hotel:v2
+   52  dir
+   53  cd src/
+   54  cd ..
+   55  cd hotel-module/
+   56  dir
+   57  cd scr
+   58  dir
+   59  cd src
+   60  dir
+   61  cd main
+   62  dir
+   63  cd java/
+   64  dir
+   65  cd com
+   66  dir
+   67  cd vizor/
+   68  dir
+   69  cd hotel/
+   70  dir
+   71  sudo docker build ./ -t hotel:v2
+   72  sudo docker images
+   73  minikube ssh
+   74  sudo docker images
+   75  eval $(minikube docker-env)
+   76  sudo docker images
+   77  docker images
+   78  sudo docker build ./ -t hotel_svc:v1
+   79  docker images
+   80  docker build ./ -t hotel_svc:v1
+   81  docker images
+   82  kubectl get depolyments
+   83  kubectl get deployments
+   84  kubectl get pods
+   85  kubectl delete pod hotel-5855cd5875-znbnb
+   86  kubectl delete pod hotel-5885cd5875-znbnb
+   87  kubectl get pods
+   88  kubectl get deployments
+   89  kubectl delete deployment hotel
+   90  kubectl get deployments
+   91  kubectl get pods
+   92  docker images
+   93  kubectl run hotel --image=hotel_svc:v1
+   94  kubectl get pods
+   95  kubectl describe pod hotel-68b7c856cc-d8vvw
+   96  kubectl get pods
+   97  kubectl get depolyments
+   98  kubectl get deployments
+   99  kubectl get pods
+  100  kubectl logs hotel-68b7c856cc-d8vvw im-crashing
+  101  kubectl logs hotel-68b7c856cc-d8vvw
+  102  kubectl logs hotel-68b7c856cc-d8vvw im-crashing
+  103  kubectl get pods
+  104  kubectl logs hotel-68b7c856cc-d8vvw
+  105  kubectl logs -f hotel-68b7c856cc-d8vvw
+  106  kubectl get pods
+  107  kubectl get deployments
+  108  ls -la
+  109  kubectl get depolyments
+  110  kubectl get deployments
+  111  kubectl delete depolyment hotel
+  112  kubectl delete deployment hotel
+  113  kubectl get deployments
+  114  kubectl get pods
+  115  ls -la
+  116  docker images
+  117  docker rmi hotel_svc:v1
+  118  docker images
+  119  dir
+  120  docker build ./ -t hotel_svc:v1
+  121  docker imagwa
+  122  docker images
+  123  docker run -d -p 8980:80 hotel_svc:v1
+  124  sudp docker run -d -p 8980:80 hotel_svc:v1
+  125  sudo docker run -d -p 8980:80 hotel_svc:v1
+  126  docker images
+  127  docker ps
+  128  sudo docker ps
+  129  docker ps -a
+  130  docker ps -a | grep hotel
+  131  docker ps -a
+  132  curl http://localhost:8980
+  133  docker run -d -p 8980:80 hotel_svc:v1
+  134  curl http://localhost:8980
+  135  dosker inspect hotel:v1
+  136  docxker inspect hotel:v1
+  137  docker inspect hotel:v1
+  138  docker ps -a
+  139  docker ps -a | grep hotel
+  140  docker rm eaa
+  141  sudo docker rm eaa
+  142  docker ps -a | grep hotel
+  143  docker inspect 5617
+  144  sudo docker rm eaa
+  145  docker inspect 5617 | grep IPADDRESS
+  146  sudo docker inspect 5617 | grep IPADDRESS
+  147  docker ps -a | grep hotel
+  148  sudo docker inspect 5617 | grep IPADDRESS
+  149  sudo docker inspect 5617 | grep ip
+  150  sudo docker inspect 5617 | grep 'IP'
+  151  sudo docker inspect 5617
+  152  sudo docker inspect 5617 | grep ip
+  153  sudo docker inspect 5617 | grep IP
+  154  sudo docker inspect 5617
+  155  docker inspect 5617 | grep IP
+  156  curl http://172.17.0.11:8980
+  157  ping 172.17.0.11
+  158  docker inspect 5617 | grep IPADDRESS
+  159  docker inspect 5617 | grep IP
+  160  docker inspect 5617 | grep IPADDR
+  161  docker inspect 5617 | grep IPAD
+  162  docker inspect 5617 | grep IP
+  163  docker inspect 5617 | grep 'IP
+'
+  164  docker inspect 5617 | grep 'IPADDRESS'
+  165  docker inspect 5617 | grep IP
+  166  curl http://172.17.0.11:8980
+  167  curl 172.17.0.11:8980
+  168* docker descri
+  169  docker ps -a
+  170  docker describe 5617
+  171  docker 5617
+  172  docker ps
+  173  clear
+  174  docker ps
+  175  docker exec -it 5617 /bash/bin
+  176  docker exec -it 5617 sh
+  177  docker exec -it 5617 bash
+  178  docker exec -it 5617 sh
+  179  sudo docker exec -it 5617 sh
+  180* sudo docker exec -it 
+  181  sudo docker exec -it 5617 ping localhost
+  182  docker exec -it 5617 ping localhost
+  183  docker inspect 5617
+  184  ping 172.17.0.11
+  185  ping 172.17.0.1
+  186  ifconfig
+  187  minikube ssh
+  188  minikube cluster-info
+  189  minikube services
+  190  kubectl get services
+  191  minikube stop
+  192  sir
+  193  docker ps
+  194  sudo docker images
+  195  sudo docker rmi hotel:v1 hotel:v1
+  196  sudo docker rmi hotel:v1 hotel_svc:v1
+  197  sudo docker rmi hotel:v2 hotel_svc:v1
+  198  sudo docker ps
+  199  sudo docker ps -a
+  200  sudo docker rm 6b9b 98a1 1ed5 3796
+  201  sudo docker ps -a
+  202  sudo docker rmi hotel:v2 hotel_svc:v1
+  203  sudo docker images
+  204  sudo docker build -t hotel:v1 .
+  205  sudo docker images
+  206  sudo docker run --name hotel1 --image=hotel:v1 -d -p 8980:80
+  207  sudo docker run --name hotel1 -d -p 8980:80 hotel:v1
+  208  sudo docker ps
+  209  docker inspect f14d | grep IP
+  210  sudo docker inspect f14d | grep IP
+  211  curl http://172.17.0.2:8980
+  212  sudo docker ps
+  213  sudo docker rm f14d
+  214  sudo docker stop f14d
+  215  sudo docker rm f14d
+  216  sudo docker images
+  217  sudo docker rmi hotel
+  218  sudo docker rmi cb7d
+  219  sudo docker rmi hotel
+  220  sudo docker images
+  221  sudo docker built -t hotel:v1 .
+  222  sudo docker build -t hotel:v1 .
+  223  sudo docker images
+  224  sudo docker run --name hotel1 -d -p 8980:80 hotel:v1
+  225  docker ps
+  226  sudo docker ps
+  227  sudo docker inspect ce6b
+  228  curl http://172.17.0.2:8980
+  229  docker ps
+  230  sudo docker ps
+  231  sudo docker exec -it ce6b ssh
+  232  sudo docker exec -it ce6b sh
+  233  sudo docker exec -it ce6b /bash/bin
+  234  sudo docker exec -it ce6b \bash\bin
+  235  sudo docker exec -it ce6b bash
+  236  curl http://172.17.0.2:8980
+  237  sudo docker inspect ce6b
+  238  sudo docker inspect ce6b | grep IPASS
+  239  sudo docker inspect ce6b | grep IPA
+  240  curl http://172.17.0.2:8980
+  241  curl http://172.17.0.2:80
+  242  curl http://172.17.0.2:8980
+  243  curl http://172.17.0.2:8
+  244  sudo docker run --name hotel1 -d -p 8980:80 hotel:v1
+  245  curl http://localhost:8980
+  246  dir
+  247  histpru
+  248  history
+  249  history > docker.txt

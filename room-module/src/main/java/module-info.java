@@ -1,0 +1,2 @@
+module room.module {
+}

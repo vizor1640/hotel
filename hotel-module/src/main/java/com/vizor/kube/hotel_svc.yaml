@@ -1,0 +1,26 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: hotel
+  name: hotel
+  namespace: default
+  annotations:
+    getambassador.io/config: |
+      ---
+      apiVersion: ambassador/v0
+      kind:  Mapping
+      name:  hotel_mapping
+      prefix: /hotel/
+      rewrite: /hotel/
+      service: hotel
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 4567
+  selector:
+    run: hotel
+  sessionAffinity: None
+  type: ClusterIP
