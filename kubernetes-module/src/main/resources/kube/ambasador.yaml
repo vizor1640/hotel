@@ -68,7 +68,7 @@ spec:
           imagePullPolicy: Always
           resources:
             limits:
-              cpu: 1
+              cpu: 3
               memory: 400Mi
             requests:
               cpu: 200m
@@ -82,14 +82,14 @@ spec:
             httpGet:
               path: /ambassador/v0/check_alive
               port: 8877
-            initialDelaySeconds: 3
-            periodSeconds: 3
+            initialDelaySeconds: 30
+            periodSeconds: 60
           readinessProbe:
             httpGet:
               path: /ambassador/v0/check_ready
               port: 8877
-            initialDelaySeconds: 3
-            periodSeconds: 3
+            initialDelaySeconds: 30
+            periodSeconds: 60
         - name: statsd
           image: datawire/statsd:0.21.2
       restartPolicy: Always

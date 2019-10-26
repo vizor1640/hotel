@@ -17,7 +17,8 @@ metadata:
       service: hotel
 spec:
   ports:
-    - port: 80
+    - name: port80
+      port: 80
       protocol: TCP
       targetPort: 4567
   selector:

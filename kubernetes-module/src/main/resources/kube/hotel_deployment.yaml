@@ -26,7 +26,8 @@ spec:
           imagePullPolicy: IfNotPresent
           name: hotel
           ports:
-            - containerPort: 4567
+            - name: port4567
+              containerPort: 4567
               protocol: TCP
       dnsPolicy: ClusterFirst
       restartPolicy: Always

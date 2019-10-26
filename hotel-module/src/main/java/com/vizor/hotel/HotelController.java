@@ -1,10 +1,12 @@
 package com.vizor.hotel;
 
-import static com.vizor.hotel.JsonUtil.json;
-import static spark.Spark.*;
+import com.vizor.redis.Redis;
+
+import static com.vizor.utils.JsonUtil.json;
+import static spark.Spark.get;
 
 public class HotelController {
-    private HotelService hotelService = new HotelService();
+    private HotelService hotelService = new HotelService(Redis.INSTANCE);
 
     public HotelController() {
         get("/hotel/:id", (req, res) -> {

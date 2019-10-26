@@ -1,5 +1,6 @@
 package com.vizor.hotel;
 
+import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -9,6 +10,8 @@ public class Hotel {
     final private CopyOnWriteArrayList<HotelLocation> hotelLocations = new CopyOnWriteArrayList<>();
 
     public Hotel(final int id, final String name) {
+        Objects.requireNonNull(name, "Hotel name cannot be null");
+
         this.id = id;
         this.name = name;
     }

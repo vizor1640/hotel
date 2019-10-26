@@ -19,7 +19,7 @@ RUN bash -c ' \
     else \
         pkg="$pkg-jre-headless"; \
     fi; \
-    apt-get install -y --no-install-recommends wget unzip curl "$pkg" && \
+    apt-get install -y --no-install-recommends wget unzip curl iputils-ping redis-tools "$pkg" && \
     apt-get clean'
 
 EXPOSE 4567/tcp

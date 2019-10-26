@@ -2,6 +2,7 @@ package com.vizor.hotel;
 
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
@@ -12,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class HotelTest {
 
     @Test
+    @Tag("PROD")
     @DisplayName("Get Hotel Name")
     public void shouldGetHotelName() {
         final String HOTEL_YESKAMO = "Hotel YESKAMO";
@@ -23,6 +25,7 @@ public class HotelTest {
     }
 
     @Test
+    @Tag("PROD")
     @DisplayName("Return False If Hotel Name Is Null")
     public void shouldAddNullHotelLocationAndRTNFalse() {
         final String HOTEL_YESKAMO = "Hotel YESKAMO";
@@ -34,6 +37,8 @@ public class HotelTest {
     }
 
     @Test
+    @Tag("PROD")
+    @DisplayName("Add a Hotel Location")
     public void shouldAddHotelLocationAndRTNTrue() {
         final String HOTEL_YESKAMO = "Hotel YESKAMO";
         final String name = "London";
@@ -47,6 +52,8 @@ public class HotelTest {
     }
 
     @Test
+    @Tag("PROD")
+    @DisplayName("Get Hotel Locations")
     public void shouldGetHotelLocations() {
         final String HOTEL_YESKAMO = "Hotel YESKAMO";
         final String name = "London";

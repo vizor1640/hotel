@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="room-module" />
         <module name="hotel-module" />
+        <module name="common-module" />
+        <module name="kubernetes-module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.9">

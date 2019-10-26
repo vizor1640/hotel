@@ -1,4 +1,5 @@
 module hotel.module {
     requires spark.core;
-    requires com.google.gson;
+    requires java.annotation;
+    requires common.module;
 }
