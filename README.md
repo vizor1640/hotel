@@ -9,6 +9,23 @@ OS X & Linux:
 
 Run Dockerfile.yaml to install hotel service -> docker build -t hotel:v1
 
+Jenkins Set-up
+
+Add Following to build application in Jenkins:-
+
+#---- BUILDHOTEL -----
+#!/bin/bash
+echo "******* Starting CI/CD Pipeline task ******"
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin 
+mvn -version
+mvn -U clean install
+cp kubernetes-module/src/main/resources/docker/Dockerfile target/
+cp hotel-module/target/hotel-module-1.0-SNAPSHOT.jar target/
+
+#---- BUILDHOTELDOCKERIMAGE ----
+cd ../BuildHotel/target
+sudo docker build --progress plain ./ -t hotel:v1
 
 ## Usage example
 
