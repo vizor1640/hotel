@@ -9,6 +9,7 @@ ARG JAVA_VERSION=9
 ARG JAVA_RELEASE=JDK
 
 ENV JAVA_HOME=/usr
+ENV REDIS_SERVICE_HOST=192.168.99.101
 
 RUN bash -c ' \
     set -euxo pipefail && \
