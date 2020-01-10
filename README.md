@@ -23,7 +23,7 @@ mvn -U clean install
 cp kubernetes-module/src/main/resources/docker/Dockerfile target/
 cp hotel-module/target/hotel-module-1.0-SNAPSHOT.jar target/
 
-#---- BUILDHOTELDOCKERIMAGE ----
+#---- BUILDHOTELDOCKERIMAGE -----
 cd ../BuildHotel/target
 sudo docker build --progress plain ./ -t hotel:v1
 
